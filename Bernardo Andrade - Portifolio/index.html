@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardo Andrade | Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <a id="fontcolor">Bernardo Andrade</a>
+        <svg height="34px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="darkmode" onclick="dark()">
+            <path
+                d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+        </svg>
+    </header>
+
+    <section>
+        <div class="sobreposto">
+            <div id="apresentacao">
+                <h1>Olá, Eu sou o</h1>
+                <h2 id="font">BERNARDO <span>ANDRADE</span></h2>
+            </div>
+            <div class="container">
+                <p>Eu sou um <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+
+            <div id="botoes">
+                <div>
+                    <button onclick="location.href='#Portifolio'" id="botao1">Bem-vindo ao meu portifólio! </button>
+                </div>
+                <div id="grade">
+                    <div>
+                        <button onclick="location.href='#SobreMim'" id="botao2">Sobre mim</button>
+                    </div>
+                    <div>
+                        <button onclick="location.href='#Projetos'" id="botao3">Projetos</button>
+                    </div>
+                    <div>
+                        <button onclick="location.href='#Habilidades'" id="botao4">Habilidades</button>
+                    </div>
+                    <div>
+                        <button onclick="location.href='#Contato'" id="botao5">Contato</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="particulas">
+            <!-- particles.js container -->
+            <div id="particles-js"></div> <!-- stats - count particles -->
+            <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
+            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        </div>
+    </section>
+
+    <div id="Portifolio">
+        <h1>Portifolio</h1>
+        <h3>Bem-vindo ao meu portifólio.</h3>
+        <p>Neste espaço, compartilho meus projetos e vivências no design e no desenvolvimento web. Além de atuar com
+            <span>HTML e CSS</span>, estou sempre <br> descobrindo novas ferramentas e tecnologias para desenvolver
+            páginas funcionais e
+            esteticamente atrativas. Aqui você terá acesso a exemplos <br> do meu trabalho, que vão desde layout
+            inovadores
+            até sites responsivos. Estou constantemente em busca de evolução e aperfeiçoamento das <br>minhas
+            habilidades,
+            visando oferecer soluções cada vez mais completas.
+        </p>
+        <br>
+        <p><span>Explore meu portfólio e veja como estou transformando ideias em projetos digitais únicos</span>. Dê uma
+            olhada nos meus trabalhos e descubra mais sobre o que posso criar!</p>
+    </div>
+
+    <div id="SobreMim">
+        <h1>Sobre mim</h1>
+        <h3>Conheça um pouco mais sobre mim.</h3>
+        <p>Olá! Meu nome é <span>Bernardo Andrade</span>, tenho 17 anos e estudo no Colégio Cotemig. Tenho grande
+            interesse por design e atualmente estou <br> aprendendo a desenvolver sites. Gosto de explorar o equilíbrio
+            entre criatividade e funcionalidade, e estou sempre buscando maneiras de <br> aprimorar minhas habilidades.
+            Tenho conhecimento em HTML e CSS, e estou expandindo meu aprendizado em outras ferramentas e <br>
+            tecnologias. <span> No futuro, pretendo continuar evoluindo e contribuir com ideias inovadoras, tanto no
+                design quanto no desenvolvimento web</span>.</p>
+    </div>
+
+    <div id="Projetos">
+        <h1>Projetos</h1>
+        <h3>Veja alguns projetos realizados por mim.</h3>
+    </div>
+    <div id="meusprojetos">
+        <img id="m1" src="Group 1.png" alt="">
+
+        <img src="Group 2.png" alt="">
+    </div>
+    <a id="btn" href="https://oganisitefrontend.netlify.app/" target="_blank"><button>Acesse o site!</button></a>
+    <a id="btn2" href="https://siteflexbernardo.netlify.app/" target="_blank"><button>Acesse o site!</button></a>
+
+    <div id="Habilidades">
+        <h1>Habilidades</h1>
+        <h3>Conheça alguma das minhas habilidades que eu aprendi com o tempo.</h3>
+    </div>
+    <img id="imgh" src="Habilidades icons (2).png" height="490px" alt="">
+
+    <div id="Contato">
+        <h1>Contato</h1>
+        <h3>Se você tem uma ideia em mente ou precisa de ajuda com desenvolvimento web e design, ficarei feliz em
+            colaborar! <br> Entre em contato e vamos criar algo juntos.</h3>
+    </div>
+    <h2 id="Mensagem">Mande uma mensagem!</h2>
+
+    <div id="divPai">
+        <div id="forms">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Telefone">
+        </div>
+
+        <div>
+            <div><textarea placeholder="Mensagem"></textarea></div>
+            <div id="btnenviar"><button>Enviar</button></div>
+        </div>
+    </div>
+
+
+        <footer>
+        <a id="rodape1">
+            <img src="envelope-solid (2).svg" height="15px" alt="">
+            <strong>E-mail</strong><br>
+            bernardo020807@gmail.com
+        </a>
+
+        <a id="rodape2">
+            <img src="phone-solid (1).svg" height="15px" alt="">
+            <strong>Telefone</strong><br>
+            (31) 97248-9324
+        </a>
+
+        <div id="rodape3">
+            <div>
+                <img src="github-brands-solid.svg" height="20px" alt="">
+                <strong>GitHub</strong>
+            </div>
+            <a href="https://github.com/bxrnardoandrade">Clique Aqui</a>
+        </div>
+
+        </footer>
+
+        <script src="txt.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

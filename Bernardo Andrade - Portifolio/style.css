@@ -1,0 +1,619 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+h1{
+font-size: 80px;
+}
+
+
+.sobreposto {
+    position: absolute;
+    z-index: 99;
+}
+
+.particulas {
+    z-index: 0;
+
+}
+
+canvas {
+    display: block;
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d4d4d4;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.count-particles {
+    background: #00221f;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+body {
+
+    background-color: #D4D4D4;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#fontcolor {
+    color: #3C00FF;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    padding-left: 2%;
+}
+
+header svg {
+    padding-right: 1%;
+}
+
+span {
+    color: #7348ff;
+}
+
+#apresentacao {
+    margin-top: 80PX;
+    color: #272626;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    line-height: 1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.container {
+    height: 5vh;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container p span.typed-text {
+    font-weight: normal;
+    color: #5e2dff;
+}
+
+.container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #5e2dff;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+
+#font {
+    font-size: 75px;
+}
+
+#botoes {
+    display: flex;
+    width: 80%;
+    gap: 5%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+header svg {
+    fill: #272626;
+}
+
+#botao1 {
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    height: 44vh;
+    width: 55vh;
+    border-radius: 20px;
+    background-image: url(o-que-e-html.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 4%;
+}
+
+#botao1:hover {
+    transform: scale(1.1);
+    background-color: #004080;
+}
+
+#botao2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 4%;
+    height: 20vh;
+    width: 40vh;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    background-color: #5e2dff;
+    border-radius: 20px;
+    background-image: url(profile-3d-icon-download-in-png-blend-fbx-gltf-file-formats--user-account-man-person-people-interface-pack-icons-6581822.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#botao2:hover {
+    transform: scale(1.1);
+}
+
+
+#botao3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 4%;
+    height: 20vh;
+    width: 40vh;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    background-color: #5e2dff;
+    border-radius: 20px;
+    background-image: url(project-management-3d-icon-download-in-png-blend-fbx-gltf-file-formats--plan-teamwork-business-planning-pack-icons-6168925.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#botao3:hover {
+    transform: scale(1.1);
+}
+
+#botao4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 4%;
+    height: 20vh;
+    width: 40vh;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    background-color: #5e2dff;
+    border-radius: 20px;
+    background-image: url(gear-3d-icon-illustrations-png.png);
+
+    background-position: center;
+    background-size: cover;
+}
+
+#botao4:hover {
+    transform: scale(1.1);
+}
+
+#botao5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 4%;
+    height: 20vh;
+    width: 40vh;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    background-color: #5e2dff;
+    border-radius: 20px;
+    background-image: url(3212590.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#botao5:hover {
+    transform: scale(1.1);
+}
+
+#Portifolio {
+    margin-top: 700px;
+    position: relative;
+    color: #272626;
+    padding-top: 180px;
+    margin-left: 10%;
+    font-size: 20px;
+    z-index: 101;
+}
+
+
+
+#SobreMim {
+    position: relative;
+    color: #272626;
+    padding-top: 130px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+
+
+#Projetos {
+    color: #272626;
+    padding-top: 180px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+
+
+#meusprojetos {
+    padding-top: 2%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#m1 {
+    position: relative;
+}
+
+#btn {
+    position: absolute;
+    left: 31%;
+    top: 2230px;
+    width: 10vh;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #5a38d3;
+}
+
+#btn button{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#btn2 {
+    position: absolute;
+    left: 81%;
+    top: 2230px;
+    width: 10vh;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #5a38d3;
+}
+
+#btn2 button{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+
+#Habilidades {
+    color: #272626;
+    padding-top: 130px;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-bottom: 2%
+}
+
+
+#Contato {
+    color: #272626;
+    padding-top: 145px;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-bottom: 2%
+}
+
+#imgh{
+    margin-left: 15%;
+}
+
+#Mensagem{
+    color: #272626;
+    padding-top: 2%;
+    margin-left: 10%;
+    font-size: 50px;
+    margin-bottom: 2%
+}
+
+#forms{
+    padding-left: 10%;
+    display: grid;
+    gap:10%;
+}
+
+#forms input{
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+#divPai{
+    display: flex;
+    gap: 5%;
+    height: 200px;
+    width: 100%;
+}
+
+textarea {
+    border-radius: 10px;
+    height: 20vh;
+    min-width: 50%;
+    width: 75vh;
+    font-size: 20px;
+}
+
+#btnenviar{
+    text-align: center;
+}
+
+#btnenviar button{
+    width: 15vh;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #5e2dff;
+    color: white;
+    border:none;
+
+}
+
+
+footer{
+    background-color: #5e2dff;
+    width: 100%;
+    height: 15vh;
+    margin-top: 30vh;
+display: flex;
+justify-content: space-around;
+}
+
+#rodape1{
+    color: white;
+    padding-top: 2%;
+}
+
+#rodape2{
+    color: white;
+    padding-top: 2%;
+}
+
+#rodape3{
+    color: white;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#rodape3  a {
+    text-decoration: none;
+    color: white;
+}
+
+textarea{
+    resize: none;
+}
+
+#grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.darkm {
+    background-color: #1B1B1B;
+}
+
+.darkm #font {
+    color: white;
+}
+
+.darkm #apresentacao {
+    color: white;
+}
+
+.darkm #fontcolor {
+    color: white;
+}
+
+.darkm #Portifolio {
+    color: white;
+}
+
+.darkm #SobreMim {
+    color: white;
+}
+
+.darkm #Projetos {
+    color: white;
+}
+
+.darkm #Habilidades {
+    color: white;
+}
+
+.darkm #Contato {
+    color: white;
+}
+
+.darkm #Mensagem {
+    color: white;
+}
+
+.darkm svg {
+    fill: white;
+}
+
+.darkm header {
+    background-color: #313131;
+}
+
+.darkm #particles-js {
+    background-color: #1B1B1B;
+}
+
+.darkm .container {
+    color: white;
+}
+
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 30px;
+    }
+
+    header {
+        background-color: #EBEBEB;
+        width: 97%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    #fontcolor {
+        color: #3C00FF;
+        font-size: 15px;
+        font-weight: 800;
+        font-family: "Inter", sans-serif;
+        padding-left: 2%;
+    }
+
+    #apresentacao {
+        margin-top: 80PX;
+        color: #272626;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        line-height: 1;
+    }
+
+    #font {
+        font-size: 30px;
+    }
+
+    .container {
+        height: 2vh;
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container p {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    
+    
+}
